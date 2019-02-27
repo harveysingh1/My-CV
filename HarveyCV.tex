@@ -1,0 +1,312 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{extarticle} % Default font size and paper size
+
+\usepackage{xunicode, fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+% \setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+% \fontspec{[FontAwesome.otf]}
+\setmainfont[Path = ./Ubuntu/,  %% Optional; but UPDATE this if 
+                         %% your font files are in a folder
+ Extension = .ttf,
+ UprightFont = *-Regular,
+ BoldFont = *-Bold,
+ ItalicFont = *-Italic,
+ SmallCapsFont = *-Medium]
+{Ubuntu}
+\fontspec{[fontawesome-webfont.ttf]}
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\definecolor{primary}{RGB}{130, 2, 99}
+\definecolor{secondary}{RGB}{128,128,128}
+
+\usepackage{xltxtra,url,parskip} % Formatting packages
+
+
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be 
+%\usepackage{fullpage}
+\usepackage{geometry}
+\geometry{a4paper,margin=0.40cm}
+%\geometry{a4paper,left=20mm, top=20mm}
+ %To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+%\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\definecolor{linkcolour}{rgb}{0.3,0.3,0.3} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{0pt}{0pt} % Spacing around sections
+
+\usepackage{multicol}
+\setlength{\columnsep}{0cm}
+
+\usepackage{tabularx}
+
+\usepackage{textcomp}
+
+\usepackage{fontawesome}
+
+\usepackage{enumitem}
+\setlist[description]{%
+  topsep=10pt,               % space before start / after end of list
+  itemsep=1pt,               % space between items
+%  font={\bfseries\sffamily\color{red}}, % if colour is needed
+}
+
+\def\arraystretch{1}
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+%\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{multicols}{3}
+\normalsize  \faGlobe\ {\href{http://harveysingh.co.uk/}{\  harveysingh.co.uk}}\\
+\normalsize \faGithub\ {\href{https://github.com/harveysingh1}{\  harveysingh1}}\\
+\normalsize  \faLinkedinSquare\ {\href{https://www.linkedin.com/in/harveysingh1}{\  Harvey Singh}}\\
+\columnbreak
+\par{\centering{\huge\textsc{\textcolor{primary}{Harvey} Singh}}\par} % Your name
+\par{\centering\normalsize {\textsc{333 Eastern Avenue, Ilford, Essex London, IG2 6NT}}\hfill\par}
+\par{\centering\normalsize {\textsc{United Kingdom}}\hfill\par}
+\columnbreak
+\raggedright\hfill\normalsize \faEnvelope\ {\href{mailto:harvirjaswal@gmail.com}{\  harvirjaswal@gmail.com}}\\
+\raggedright\hfill\normalsize \faPhone\ {\href{tel:07592631425}{\  +44-7592 631 425}}\\
+\end{multicols}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\vspace{-0.6cm}
+\hfill {\textcolor{secondary}{\scriptsize Last updated on \today}
+\section{\textcolor{primary}{Education}}
+
+\begin{tabular}{r|p{17.5cm}}	
+2012-2017 & Bachelor of Science in \textbf{Computer Science}\hfill\textsc{Award}: Second Upper Class (2:1)\\
+&\textbf{Brunel University}, London\\
+%&\textbf{Coursework: }{Programming and Data Structures, Algorithms-I \& II, Software Engineering, Compilers, Switching Circuits, Operating Systems, Computer Networks, Information Retrieval, Database Management Systems, Theory of Computation, Machine Learning, Image Processing, Advanced Graph Theory}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS 
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{primary}{Technical Skills}}
+\begin{tabular}{r|p{15cm}}
+\textsc{Programming} & \textsc{\underline{Intermediate:}} C\#, Java, MATLAB\\
+& \textsc{\underline{Novice:}} Javascript, Kotlin \\
+& \textsc{\underline{Basic:}} Python \\
+\textsc{Libraries / Frameworks} & Node.js, ReactJS, AngularJS, DropWizard, Maven, JUnit, TestNG, Service Fabric, Castle Windsor, ASP.NET, SpecFlow, NUnit\\
+\textsc{Databases} & CosmosDB, SQL Server\\
+\textsc{Systems / Platforms} & Git, Azure, Docker\\
+\end{tabular}
+
+\section{\textcolor{primary}{Work Experience}}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{tabularx}{\linewidth}{ l | X }
+
+%----------------------------------------------------------------------------------------
+%	ASOS - QA Engineer
+%----------------------------------------------------------------------------------------
+
+\textsc{Current -} & \textbf{Associate QA Engineer} \textsc{ - ASOS Enki Fashionbot}\hfill\textbf{ASOS PLC}\\
+\textsc{Jun '18}& {- Implementing new features to improve the user experience on a Azure hosted C\# Facebook Chatbot. }\\
+& {- Undertaking tech debt to split the solution apart to help reduce build times}\\
+& {- Added PDB file deployments to symbol servers in order to allow stepping over NuGet DLLs}\\
+& {- Added stored procedure which is run on every deployment to clean up CosmosDB of any test-user entries}\\
+& {- Introduced brand mapping functionality so end-users could specify specific brands within their searches, thus allowing users to see what they actually want to see}\\
+& {- Introduced a pagination functionality within the chatbot responses to allow users to access more results from the ASOS catalogue}\\
+& {- Frequent attendee of ASOS' internal "Next Gen Compute" courses which cover new technology stacks to improve my skills and knowledge}\\
+& {- Attend twice-weekly code craftsmanship classes run by my Lead Developer in order to make the transfer over to Software Developer}\\
+& {- Completely refactored existing test suite left behind by prior Senior QA to make it more robust and mapped according to the Testing Pyramid. Resulted in reduced deployment times of around 40\% and a less "flaky" test suite}\\
+\multicolumn{1}{c}{} \\
+
+
+%----------------------------------------------------------------------------------------
+%	Veritas - Associate Software Engineer
+%----------------------------------------------------------------------------------------
+
+\textsc{June '18} & \textbf{Associate Software Engineer} \textsc{ - Information Classifier}\hfill\textbf{Veritas LLC}\\
+\textsc{Dec '17} & {\raggedright - Implemented new features on a Java microservice for data discovery and visualisation. An NLP solution implementing Stanford NLP, using a TDD and BDD approach to development}\\
+& {- Helped implement extraction of text from uploaded documents and images using Tesseract OCR, allowing data to be easily scanned for compliance and GDPR requirements}\\
+& {- Created an internal performance monitoring dashboard using Chart.js to monitor any degradation in the classification engine}\\
+& {- Writing unit, integration, and UI tests using Mockito, TestNG, and Protractor for the End-to-End tests}\\
+& {- Took on QA responsibilities (as we had no QA on the team) and trained other members of the team on the importance of the testing pyramid, and completely overhauled the automated test suite, whilst also refactoring the existing code to make it more unit testable and SOLID}\\
+& {- Configured and remastered build \& release pipelines with CI/CD using Maven, Jenkins and JIRA}\\
+
+\\
+
+%----------------------------------------------------------------------------------------
+%	QA Engineer
+%----------------------------------------------------------------------------------------
+
+\textsc{Dec '17} & \textbf{QA Engineer} \textsc{ - Enterprise Vault}\hfill\\
+\textsc{Jun '17} & {- Actively attended training courses, code katas, and pair-programmed with senior developers to home developer skills}\\
+& {- Paired with Principal Developer on feature which allowed archiving SMTP messages}\\
+\\
+
+%----------------------------------------------------------------------------------------
+%	Performance Engineer Intern
+%----------------------------------------------------------------------------------------
+\textsc{Jul '16} & \textbf{Performance Engineer Intern} \textsc{- Enterprise Vault}\hfill\\
+\textsc{Jun '15}
+& {- Developed tool written in WPF and C\# in order to perform monitoring and alerting of MSMQ statuses}\\
+& {- Undertook benchmark and regression testing to ensure software quality and stability with third party software packages}\\
+& {- Managed a large-scale performance and scalability environment, providing fortnightly reports for the leadership team on the current state of the software}\\
+& {- Ran performance testing against third party storage devices and providing reports to determine whether the hardware met set specifications}\\
+
+
+\end{tabularx}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{primary}{Projects}}
+\vspace{0.1cm}
+\begin{description}
+ \item[Artificial Neural Network for Intrusion Detection]\hfill \\
+Final year project to develop a Neural Network for aid in intrusion detection.
+ \item[Lyrics generator using neural networks] Wrote a lyrics generator using TensorFlow that generates a new song in an artist's style. A Long Short Term Memory (LSTM) Neural Network learns the artists' styles of writing including words, rhymes, chorus patterns, etc. for the task.
+%  \item[Data extraction from biomedical literature for automating systematic reviews] Worked on feature detection of a particular class of text (specifically, inclusion and exclusion criteria for patients) from a huge collection of biomedical literature using NLP Techniques with high precision and recall.
+ \item[Selene] Built a social music-recommendation Android app based on YouTube that analyzes usage data from friends and nearby users and recommends the most popular tracks.
+ \item[Retrieving salient sentences from Reddit AMAs] Built a summariser that provides summaries from /r/iAMA clustered by topics, using k-mean clustering and Alchemy API.
+% \item[Studious] Built a complete course management system that supported authentication \& authorization, User Access Control for 4 different types of users, real-time messaging with notifications (using socket.io), calendar support, etc.
+%%  \item[Medical Lab Automation System] Developed software using JAVA Swing for a Medical Lab Automation System which handles and automates all requests of the management and patients.
+\end{description}
+
+%----------------------------------------------------------------------------------------
+%	Hackathons
+%----------------------------------------------------------------------------------------
+
+\section{\textcolor{primary}{Hackathons \& Competitions}}
+
+\begin{tabularx}{\linewidth}{ l | X }
+
+\textsc{Mar 17} & \textbf{MetaKGP Dashboard}\hfill\textbf{Inter-IIT Tech Meet `17}\\
+& {- Won bronze medal for building a NUS-Mods style dashboard with various utilities created for students of my college. The dashboard was built with a NodeJS backend and had several utilities including smart timetable, news aggregator, question paper portal and professor finder to name a few.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Dec 16} & \textbf{StoI} \textsc{(SMS to Internet)}\hfill\textbf{Pragyan Hackathon `17}\\
+& {- Made an android application for basic internet access like Google Maps navigation, Duckduckgo quick search, Zomato reviews, etc. without a data connection. Communication with the server was done using Twilio's SMS APIs.}\\
+\multicolumn{2}{c}{} \\
+
+\textsc{Apr 16} & \textbf{Data Extractor for 2D plots}\hfill\textbf{OpenSoft '16}\\
+& {- Built a graph extractor that detects multi-variable graphs in any given PDF and tabulates them autonomously taking into consideration features like axis values, scales and legends.}\\
+% & {- Was primarily responsible for detecting and scaling the ticks from the colour segregated image and scale it appropriately using the axis values and generate the plot. Was also solely responsible for generating the table structure using Python libraries and to fully build a working GUI for the application on Java Swing.}\\
+%\multicolumn{2}{c}{} \\
+
+%\textsc{Mar 15} & \textbf{Campus Connexions}\hfill\textbf{Microsoft Code.Fun.Do 2015}\\
+%& {- Developed an intra-college social networking app with real time feed from registered users that would serve as a platform for official and unofficial announcements related to the college.}\\
+% Windows Azure was used for database management and development was primarily done with Visual Studio.}\\
+% & {- Was solely responsible for building the complete front end for the app, and to connect with Azure to dynamically load content in the news feed.}\\
+%\multicolumn{2}{c}{} \\
+
+%\textsc{Dec 2014} & \textbf{Object Follower Robot}\hfill\textbf{Technology Robotix Society, IIT Kharagpur}\\
+%& {- Implemented image detection algorithms using openCV for a WSAD robot which can follow a specified path using the directives sent by overhead camera whose recorded images were processed and movement instructions generated.}
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	POSITIONS OF RESPONSIBILITY
+%----------------------------------------------------------------------------------------
+
+%\vspace{-0.3cm}
+%\section{Positions of Responsibility}
+
+%\begin{tabular}{r|p{17.5cm}}
+%\textsc{Current} & \textbf{Maintainer}, MetaKGP\\
+%\textsc{Current} & \textbf{Chief Editor}, Technology Literary Society, IIT Kharagpur \\
+%& {- Managing the content and design team of the society.}\\
+%& {- Writer in the English Team, and working as a senior editor for all English publications.}\\
+%\textsc{Apr 2017} & \textbf{Captain}, Team LBS, OpenSoft 2017\\
+%\textsc{Apr 2016} & \textbf{General Secretary}, CodeClub, IIT Kharagpur \\
+%\textsc{Apr 2015} & \textbf{Secretary}, CodeClub, IIT Kharagpur \\
+%& {- Part of the managing team, leading a group of 25 students.}\\
+%& {- Conducted several events, including Microsoft code.fun.do and BITWISE, the Annual Departmental Fest of the Department of Computer Science and Engineering, alongside several fortnightly competitive coding competitions within the campus.}\\
+%& {- Designed the software for updating the leaderboards in real-time during competitions as a part of BITWISE '15.}\\
+%\textsc{Apr 2015} & \textbf{Core Team Member}, Google Students Club, IIT Kharagpur
+%& {- Organized multiple workshops and events, primarily focused on Android Development, in association with Google.}\\
+%& {- Conducted a workshop on the {\href{https://www.polymer-project.org/0.5/}{Polymer Project}}, which received high levels of}\\ & {participation.}\\
+%\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	COURSEWORK
+%----------------------------------------------------------------------------------------
+
+% \section{Coursework
+% \hfill\small\textsc{(T)heory and (L)aboratory}}
+
+% \begin{multicols}{2}
+% - Programming and Data Structures (T/L) \\
+% - Discrete Structures \\
+% - Algorithms - II \\
+% - Switching Circuits (T/L) \\
+% - Operating Systems (T/L) \\
+% - Computer Networks (T/L) \\
+% - Machine Learning * \\
+% - Image Processing * \\
+% - Algorithms-I (T/L) \\
+% - Software Engineering (T/L) \\
+% - Formal Languages and Automata Theory \\
+% - Compilers (T/L) \\
+% - Database Management Systems (T/L) \\
+% - Information Retrieval \\
+% - Object Oriented Software Design * \\
+% - Advanced Graph Theory *
+% \end{multicols}
+% {\itshape{Currently Studying:}}\\
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+% \section{Scholastic Achievements}
+
+% %\begin{multicols}{2}
+% - Secured 98.11 percentile in JEE Advanced 2013 \\
+% - Secured 99.33 percentile in JEE Mains 2013 \\ 
+% - Secured AIR 415 in ACM ICPC – Amritapuri online round, 2014
+% %\end{multicols}
+
+%----------------------------------------------------------------------------------------
+
+%\newpage
+%----------------------------------------------------------------------------------------
+
+\end{document}
